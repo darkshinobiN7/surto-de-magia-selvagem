@@ -1,0 +1,115 @@
+/*********** Imported Fonts **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+/*********** Color Setup **********/
+---c-yellow-orange: #fea53d;
+---c-tolopea: #2b1d34;
+---c-white: #ffffff;
+---c-scarlet-gum: #47315c;
+---c-heliotrope: #d78bf3;
+---c-sunglow: #fdbf2c;
+---c-venus: #937e83;
+
+/*********** Font Setup (.5rem = 8px / 1rem = 16px) **********/
+    --body-font: 'Poppins', sans-serif;
+    --big-f-size: 5rem;
+    --h1-f-size: 4.5rem;
+    --h2-f-size: 4rem;
+    --h3-f-size: 3.5rem;
+    --button-size: 3rem;
+    --normal-f-size: .938rem;
+    --small-f-size: .813rem;
+
+/*********** Font Weight **********/
+    --f-medium: 500;
+    --f-semi-bold: 600;
+}
+
+/*********** Base Rules **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(---c-scarlet-gum);
+    font-family: var(--body-font);
+    font-size: var(--normal-f-size);
+}
+
+/*********** Main **********/
+.main {
+    overflow: hidden;
+}
+
+
+.section {
+    
+}
+
+.title {
+    margin-bottom: 20px;
+    color: var(---c-white)
+}
+
+/*********** Buttons **********/
+.button {
+    width: auto;
+    height: auto;
+    background-color: var(---c-sunglow);
+    color: var(---c-scarlet-gum);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--f-semi-bold);
+    text-decoration: none;
+    font-size: var(--button-size);
+    border: none;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(---c-yellow-orange);
+    color: var(---c-tolopea);
+}
+
+h3 {
+    color: var(---c-white);
+    font-size: var(--h3-f-size);
+    font-weight: var(--f-semi-bold);
+    text-align: center;
+}
+
+p {
+    color: var(---c-venus);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.flex-container {
+    margin-top: 10rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice {
+    margin-bottom: 30px;
+}
+
+.dice-box {
+    width: 50%;
+    background: var(---c-tolopea);
+    padding: 20px;
+    border-radius: 10px;
+}
