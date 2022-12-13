@@ -1,1 +1,1 @@
-# surto-de-magia-selvagem
+# wild-magic-surge
